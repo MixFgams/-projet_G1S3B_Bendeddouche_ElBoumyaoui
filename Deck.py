@@ -1,4 +1,6 @@
 # Auteur : Farouk Mohamed Bendeddouche
+from Les4StructureDeDonnees.ListeChainee import ListeChainee
+from Les4StructureDeDonnees.Pile import *
 
 class Deck:
     def __init__(self, nom, taille_max):

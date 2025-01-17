@@ -1,9 +1,8 @@
 # Auteur : Farouk Bendeddouche
 
-from Card import card
 from Les4StructureDeDonnees.File import *
 
-class Minion(card):
+class Minion():
     def __init__(self, attackPoints, healthPoints, name, cost):
         """
         Initialise un serviteur avec des points d'attaque, de vie, un nom et un coût.
@@ -14,7 +13,8 @@ class Minion(card):
         name (str): Le nom du serviteur.
         cost (int): Le coût de la carte serviteur.
         """
-        super().init(name, cost)
+        self.name = name
+        self.cost = cost
         self.ap = attackPoints
         self.hp = healthPoints
         self.effet = File()

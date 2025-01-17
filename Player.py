@@ -1,7 +1,7 @@
 # Auteur : Farouk Mohamed Bendeddouche
 
 from Hero import *
-from Les4StructureDeDonnees.ListeChainee import ListeChainee
+from Les4StructureDeDonnees.ListeChainee import *
 from Deck import *
 from Minion import *
 
@@ -189,7 +189,7 @@ class Player:
             print(f"{self.ennemy.name} n'a plus que {self.ennemy.hero.hp} pv!")
             return
         elif 1 <= choix_cible <= adversaire.board.taille():
-            cible = adversaire.board.getNoeud(choix_cible).valeur
+            cible = adversaire.board.getNoeud(choix_cible-1).valeur
         else:
             print("Choix invalide. Action annulée.")
             return
